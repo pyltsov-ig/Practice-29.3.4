@@ -33,6 +33,46 @@
                                     <action selector="createFileBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Byh-cC-BDl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLv-PO-4kt">
+                                <rect key="frame" x="20" y="481" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61556624159999995" green="1" blue="0.98580352869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create My file"/>
+                                <connections>
+                                    <action selector="createMyFileBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eV7-Ib-CDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jg-Cc-p2T">
+                                <rect key="frame" x="20" y="540" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66554331710000003" green="1" blue="0.52823523419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create folder"/>
+                                <connections>
+                                    <action selector="createFolderBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0B-9A-66H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woy-rH-liR">
+                                <rect key="frame" x="267" y="540" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66554331710000003" green="1" blue="0.52823523419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Check folder"/>
+                                <connections>
+                                    <action selector="checkFolder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nun-au-npK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ig-Jg-ZDZ">
+                                <rect key="frame" x="20" y="607" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66554331710000003" green="1" blue="0.52823523419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Read file"/>
+                                <connections>
+                                    <action selector="readFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2I-Xq-Eet"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4J-mz-1fs">
                                 <rect key="frame" x="267" y="423" width="127" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,14 +83,24 @@
                                     <action selector="checkTmp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7l-RU-8J3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLv-PO-4kt">
-                                <rect key="frame" x="20" y="481" width="127" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-g4-jHi">
+                                <rect key="frame" x="267" y="607" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66554331710000003" green="1" blue="0.52823523419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Write to file "/>
+                                <connections>
+                                    <action selector="writeToFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gP-2D-YfP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF0-CE-IYI">
+                                <rect key="frame" x="117" y="733" width="277" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61556624159999995" green="1" blue="0.98580352869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Create My file"/>
+                                <state key="normal" title="Read from writed file"/>
                                 <connections>
-                                    <action selector="createMyFileBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eV7-Ib-CDi"/>
+                                    <action selector="readFromWritedFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFz-n2-qXL"/>
                                 </connections>
                             </button>
                         </subviews>
