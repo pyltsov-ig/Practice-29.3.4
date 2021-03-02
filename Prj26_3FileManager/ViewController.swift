@@ -57,22 +57,20 @@ class ViewController: UIViewController {
             var list = ""
             let objects = objectsInCatalog
             if objects.count > 0 {
+                
                 for i in 0 ..< objects.count {
                     list = list + objects[i] + "\n"
                 }
-                if objects.first == fileName {
-                    print("File WAS found")
-                    return objects.first
-                } else {
-                    print("File NOT found")
-                    return nil
+                return list
+            } else {
+                print("File NOT found")
+                return nil
                 }
-            }
-        } catch {return nil} //catch let error as NSError {
+            } catch {return nil}
+        //catch let error as NSError {
           //  addressLabel.text = "Error  - \(error)"
         //}
-    return nil
-    }
+}
     
     @IBAction func checkTmp(_ sender: UIButton) {
         let fileCatalog = validateCatalog() ?? "Nothing"
