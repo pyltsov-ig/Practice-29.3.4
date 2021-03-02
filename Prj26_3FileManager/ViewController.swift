@@ -137,19 +137,15 @@ class ViewController: UIViewController {
         
         //let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
 
-        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-        let fullPath = documentDirectory?.appendingPathComponent(fileName)
-        do {
-            let contentsOfFile = try NSString(contentsOfFile: fullPath?.path ?? "", encoding: String.Encoding.utf8.rawValue)
-            addressLabel.text = contentsOfFile as String
-        } catch let error as NSError {
-            addressLabel.text = "Error  \(error)"
+        if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            let fullPath = documentDirectory.appendingPathComponent(fileName)
+            do {
+                let contentsOfFile = try NSString(contentsOfFile: fullPath.path, encoding: String.Encoding.utf8.rawValue)
+                addressLabel.text = contentsOfFile as String
+            } catch let error as NSError {
+                addressLabel.text = "Error  \(error)"
+            }
         }
-        
-        
-        
-        
     }
-    
 }
 
